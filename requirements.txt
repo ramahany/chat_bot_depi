@@ -1,0 +1,13 @@
+firebase-admin
+streamlit
+# agents
+groq
+langgraph
+langchain 
+tavily-python 
+huggingface_hub 
+chromadb
+langchain-google-genai
+# grammar correction 
+gradio-client==1.13.3
+gradio==5.49.1
