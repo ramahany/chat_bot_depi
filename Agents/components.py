@@ -13,7 +13,7 @@ Hf_token = st.secrets["HF_token"]
 travily_token = st.secrets["Travily_token"]
 gemini_key = st.secrets["Gemini_key"]
 groq_api_key = st.secrets["Groq_api_key"]
-GC_mdl = Client("Hager-Mohamed/Gemma_Grammar_Correction")
+GC_mdl = Client("Hager-Mohamed/Gemma_Grammar_Correction", timeout=600)
 
 @tool
 def get_grammar_correction(statment: str) -> str:
@@ -183,3 +183,4 @@ def final_composer(state: State) -> State:
     )
     state['status_message'] = "✨ Final response ready."
     return state
+
