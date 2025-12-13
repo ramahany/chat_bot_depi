@@ -46,7 +46,7 @@ Final Composer → `final_output`
              ↓
 Streamlit UI + Firebase (stores `hist` + `chat_bot_hist`)
 ```
-<img width="720" height="778" alt="graph" src="https://github.com/user-attachments/assets/4135dc8d-d5ae-4589-b7fc-1bef7b6e0329" />
+<img width="360" height="390" alt="graph" src="https://github.com/user-attachments/assets/4135dc8d-d5ae-4589-b7fc-1bef7b6e0329" />
 
 - **In-graph memory**:
   - `Agents/graph.py` uses `InMemorySaver` from `langgraph.checkpoint.memory` and compiles the graph with `checkpointer=memory`.
@@ -338,6 +338,7 @@ This section explains **how to safely swap models** for each agent while keeping
 
 - Translation currently supports only Arabic → English.
 - Model-specific behaviors (like `<think>` tags) are handled via regex and may require updates when models change.
+
 
 
 
